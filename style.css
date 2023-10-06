@@ -1,59 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins&display=swap');
+/*font-family: 'Didact Gothic', sans-serif;
+font-family: 'Poppins', sans-serif;*/
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-#wrapper{
-    width:100%;
-    height:auto;
-    overflow-y: auto;
-    overflow-x: hidden;
+.ff-poppins{
+    font-family: 'Poppins', sans-serif;
 }
-.container1{
-    width:100%;
-    height:100vh;
-    background-color: pink;
+.ff-dg{
+    font-family: 'Didact Gothic', sans-serif;
 }
-.container2{
-    width:100%;
-    height:100vh;
-    background-color:aqua;
+.slide-window{
+    max-width: 100%;
+    height: 50vh;
+    margin-top: 5vh;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    position: relative;
 }
-.container3{
-    width:100%;
-    height:100vh;
-    background-color: teal;
-}
-.container4{
-    width:100%;
-    height:100vh;
-    background-color: grey;
-}
-.navbar{
-    width:100%;
-    height:15%;
-    background-color: grey;
+.swiper {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-}
-.navbar ul{
-    display:flex;
-    gap:1.5rem;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    /* filter: brightness(80%); */
+  }
+  #goa_img{
+    filter: brightness(80%);
+  }
+  .image_headings{
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:50%;
+    left:45%;
+    color:#fff;
+    transform: scale(2);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-shadow: 3px 3px 5px rgba(255,255,255,0.39);
+  }
+.box{
+    background-color: #E9E7DD;
     
-}
-.navbar li{
-    list-style: none;
-    font-size: 1.4rem;
-}
-.searchbar{
-    width: 25rem;
-    height:2rem;
-    border-radius: 5px;
-    border:1px solid black;
-   
-}
-img{
-    height:30%;
-    width:5rem;
 }
