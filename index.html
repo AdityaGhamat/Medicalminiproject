@@ -5,26 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div id="wrapper">
-        <div class="container1">
-            <div class="navbar"> 
-                <img src="https://www.onlinelogomaker.com/blog/wp-content/uploads/2017/06/medical-logo.jpg" alt="image">
-                <input type="text" class="searchbar" placeholder="Search..">
-                <ul>
-                    <li>Sign in</li>
-                    <li>About Us</li>
+    <div id="wrapper"class="overflow-x-hidden overflow-y-auto">
+        <div id="container1" class="h-full">
+            <div id="navbar" class="flex justify-around bg-lime-400 h-14 items-center ff-poppins"> 
+                <img src="" alt="image">
+                <div>
+                   <input type="text" id="searchbar" placeholder="Search.." class="h-6 rounded-lg border-inherit p-2">
+                   <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+                </div>
+                <ul id="list" class="flex justify-center gap-3">
+                    <li class="cursor-pointer">Sign in</li>
+                    <li class="cursor-pointer">About Us</li>
                 </ul>
-                
+            </div>
+            <div class="slide-window flex mt-8" id="slide-window">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/goa img.jpg" id="goa_img" alt="">
+                            <h2 class="image_headings" ">GOA</h2>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/kashmir img.jpg" alt="">
+                            <h2 class="image_headings">KASHMIR</h2>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/kerala.jpg" alt="">
+                            <h2 class="image_headings">KERLA</h2>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/mizoram.jpg" alt="">
+                            <h2 class="image_headings">MIZORAM</h2>
+                        </a>
+                      </div>
+                      <!-- <div class="swiper-slide">Slide 5</div>
+                      <div class="swiper-slide">Slide 6</div>
+                      <div class="swiper-slide">Slide 7</div>
+                      <div class="swiper-slide">Slide 8</div>
+                      <div class="swiper-slide">Slide 9</div> -->
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+            <div class="flex justify-evenly gap-16 w-full mt-10">
+                <div class="h- w-20 box">A</div>
+                <div class="h-20 w-20 box">B</div>
+                <div class="h-20 w-20 box">c</div>
             </div>
         </div>
-        <div class="container2">
+        <div id="container2">
         </div>
-        <div class="container3">
+        <div id="container3">
         </div>
-        <div class="container4">
+        <div id="container4">
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>
