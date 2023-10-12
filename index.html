@@ -1,81 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coconut : Medical Store</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <div id="wrapper"class="overflow-x-hidden overflow-y-auto">
-        <div id="container1" class="h-full">
-            <div id="navbar" class="flex justify-around bg-lime-400 h-14 items-center ff-poppins"> 
-                <img src="" alt="image">
-                <div>
-                   <input type="text" id="searchbar" placeholder="Search.." class="h-6 rounded-lg border-inherit p-2">
-                   <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
-                </div>
-                <ul id="list" class="flex justify-center gap-3">
-                    <li class="cursor-pointer">Sign in</li>
-                    <li class="cursor-pointer">About Us</li>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="wrapper" class="overflow-x-hidden overflow-y-auto">
+      <div id="container1" class="h-screen">
+        <div id="navbar" class="flex h-20 justify-center items-center md:justify-between lg:justify-evenly text-zinc-50 lg:text-xl text-xl">
+          <div class="logo-text ml-3 w-auto">
+            <h1 class="cursor-pointer ff-Boo scale-125">COCONUT</h1>
+          </div>
+          <div class="ml-8 lg:w-auto flex lg:justify-center lg:items-center items-center lg:p-0">
+            <input
+              type="text"
+              id="searchbar"
+              placeholder="Search.."
+              class="h-7 rounded-lg border-inherit p-3 text-black w-3/5 lg:w-4/5 "
+            />
+            <i class="fa-solid fa-magnifying-glass cursor-pointer ml-2"></i>
+          </div>
+          <ul
+            id="nav-menu"
+            class="lg:flex md:flex lg:justify-center md:justify-center lg:gap-5 md:gap-5 w-2/5 lg:w-auto"
+          >
+            <li class="cursor-pointer nav-item nav-link hover:text-cyan-200"><a href="#">About us</a></li>
+            <li class="cursor-pointer nav-item nav-link hover:text-cyan-200"><a href="#">Contact us</a></li>
+            <li class="cursor-pointer nav-item nav-link hover:text-cyan-200"><a href="form files/form.html">Sign in</a></li>
+          </ul>
+          <div class="hamburger mr-3">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+        <!-- slider starts from here -->
+
+        <div class="swiper mySwiper mt-8 z-0 h-2/5 lg:h-2/5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/image (1).jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/image (3).jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/image (4).jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/image (5).jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- slider ends here -->
+
+        <!-- three div starts here -->
+        <div
+          class="lg:flex flex md:flex lg:justify-evenly md:justify-evenly justify-center lg:block lg:flex-row flex-col lg:gap-16 lg:w-full lg:mt-10 lg:text-white lg:text-xl"
+          id="box1"
+        >
+          <div
+            class="flex lg:w-80 box cursor-pointer lg:items-center lg:rounded lg:shadow-md lg:justify-between lg:pl-6 lg:hover:shadow-xl"
+          >
+            <h2 class="text-center">Medicine</h2>
+            <span class="material-symbols-outlined">chevron_right</span>
+          </div>
+          <div
+            class="flex lg:w-80 box cursor-pointer lg:items-center lg:rounded lg:shadow-md lg:justify-between lg:pl-6 lg:hover:shadow-xl"
+          >
+            <h2 class="text-center">Beauty</h2>
+            <span class="material-symbols-outlined">chevron_right</span>
+          </div>
+          <div
+            class="flex lg:h-20 lg:w-80 box lg:cursor-pointer lg:items-center lg:rounded lg:shadow-md lg:justify-between lg:pl-6 lg:hover:shadow-xl"
+          >
+            <h2 class="text-center">Wellness</h2>
+            <span class="material-symbols-outlined">chevron_right</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- three div ends here -->
+
+      <div id="container2"></div>
+      <div id="container3"></div>
+      <div id="container4">
+        <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="footer-col">
+                <h4>COMPANY</h4>
+                <ul>
+                  <li><a href="#">about us</a></li>
+                  <li><a href="#">our services</a></li>
+                  <li><a href="#">privacy</a></li>
+                  <li><a href="#">contact</a></li>
                 </ul>
+              </div>
+              <div class="footer-col">
+                <h4>OUR POLICIES</h4>
+                <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">privacy policy</a></li>
+                  <li><a href="#">shipping and delivery policy</a></li>
+                  <li><a href="#">fees and payment policy</a></li>
+                  <li><a href="#">return,refund policy</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>ONLINE SHOP</h4>
+                <ul>
+                  <li><a href="#">browse by A-Z</a></li>
+                  <li><a href="#">health articles</a></li>
+                  <li><a href="#">offers/coupons</a></li>
+                  <li><a href="#">complete solution</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>FOLLOW US</h4>
+                <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
             </div>
-            <div class="slide-window flex mt-8" id="slide-window">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <a href="#">
-                            <img src="images/goa img.jpg" id="goa_img" alt="">
-                            <h2 class="image_headings" ">GOA</h2>
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="#">
-                            <img src="images/kashmir img.jpg" alt="">
-                            <h2 class="image_headings">KASHMIR</h2>
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="#">
-                            <img src="images/kerala.jpg" alt="">
-                            <h2 class="image_headings">KERLA</h2>
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="#">
-                            <img src="images/mizoram.jpg" alt="">
-                            <h2 class="image_headings">MIZORAM</h2>
-                        </a>
-                      </div>
-                      <!-- <div class="swiper-slide">Slide 5</div>
-                      <div class="swiper-slide">Slide 6</div>
-                      <div class="swiper-slide">Slide 7</div>
-                      <div class="swiper-slide">Slide 8</div>
-                      <div class="swiper-slide">Slide 9</div> -->
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                  </div>
-            </div>
-            <div class="flex justify-evenly gap-16 w-full mt-10">
-                <div class="h- w-20 box">A</div>
-                <div class="h-20 w-20 box">B</div>
-                <div class="h-20 w-20 box">c</div>
-            </div>
-        </div>
-        <div id="container2">
-        </div>
-        <div id="container3">
-        </div>
-        <div id="container4">
-        </div>
+          </div>
+        </footer>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>
